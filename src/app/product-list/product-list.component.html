@@ -1,0 +1,6 @@
+<!-- product-list.component.html -->
+<div *ngFor="let product of products">
+  <h2>{{ product.name }}</h2>
+  <p>Price: {{ product.price | currency }}</p>
+  <a [routerLink]="['/product', product.id]">View Details</a>
+</div>
